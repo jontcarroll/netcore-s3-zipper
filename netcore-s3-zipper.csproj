@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>netcore_s3_zipper</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="nlog.config" CopyToOutputDirectory="Always"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0"/>
+    <PackageReference Include="AWSSDK.Core" Version="3.3.103.48"/>
+    <PackageReference Include="AWSSDK.S3" Version="3.3.104.36"/>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.100.1"/>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="3.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0"/>
+    <PackageReference Include="System.IO.Compression" Version="4.3.0"/>
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0"/>
+    <PackageReference Include="NLog" Version="4.6.7"/>
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.6.1"/>
+  </ItemGroup>
+</Project>
